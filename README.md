@@ -6,4 +6,6 @@ Purpose: The purpose of this project is two fold. First is to create a believabl
 
 Contributors: Dhruv Parekh, Charles Kirschner, Avi Patel, Harshil Patel, Javdevsinh Zala
 
-Instructions:
+Instructions: All the manuals and documentation can be found in the "docs" folder.
+
+Please visit the project site for more information: http://moonbaserover.atwebpages.com
