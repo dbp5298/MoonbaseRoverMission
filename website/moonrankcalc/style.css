@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: monospace;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(217deg, rgba(72,61,139,.8), rgba(72,61,139,0) 70.71%),
+    linear-gradient(127deg, rgba(0,0,0,.8), rgba(0,0,0,0) 70.71%),
+    linear-gradient(336deg, rgba(169,169,169,.8), rgba(169,169,169,0) 70.71%);
+}
+
+.calc-body{
+    background: radial-gradient(
+        rgba(255, 255, 255, 0.09),
+        rgba(255, 255, 255, 0.9)
+      );    height: 50vh;
+    width: 45vw;
+    height: 70vh;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.result{
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 70vh;
+    width: 20vw;
+    background: radial-gradient(
+        rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.5)
+    );
+}
+.button {
+    background-color: #12134E;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: alfa-slab-one;
+    font-style: normal;
+    font-weight: 400;
+}
+.result h1{
+    font-size: 50px;
+    margin: 20px 0;
+    text-align: center;
+	padding-left: 200px;
+}
+h2{
+    font-size: 35px;
+    margin: 10px 30px;
+}
+
+.show{
+    margin-top: 85px;
+}
+.inp{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+}
+
+input{
+    font-weight: 880;
+    border-radius: 10px;
+    margin: 15px;
+    height: 45px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid rgba(255,255,255,1.00);
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.main{
+    margin-left: 45px;
+}
+button{
+    margin-top: 20px;
+    height: 45px;
+    width: 200px;
+    font-weight: 650;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgb(223, 217, 217);
+    outline: none;
+    font-size: 20px;
+}
+
+placeholder{
+    font-weight: 850;
+	opacity: 100;
+}

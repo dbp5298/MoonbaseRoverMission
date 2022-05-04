@@ -1,0 +1,51 @@
+This section contains step by step guide for the user to follow from the start of the mission to end
+of the mission. The guide of what to do on the track and what not to do during the mission is in
+progress.
+
+• Step by Step Guide for the operations
+o Rover operations
+? User would have to hit start on the M5Stack
+? Solve the puzzle
+? Scan the QR code with phone that will appear on the screen
+? Control the rover with the remote that is on the phone
+? Drive forward according to map
+? Grab the payload by avoiding all the obstacles with phone remote
+? Solve the numpad puzzle which will open the gate
+? Land the Rover on the PIR motion Sensor
+? Stop timer
+? QR code will appear on the screen for the UI Site
+o Rank calculator site
+? User can access the site on the phone by scanning the QR code
+? To know more about the project user can hit instruction
+? To know about the team user can hit about us.
+? To calculate the rank user can navigate down to “Calculator” button and
+press it
+? Now user will prompt to the calculate rank page
+? User will prompt to enter the time and score
+? Entering the value for the field user can press Calculate Rank
+? Now user will have the respective rank according to the value they entered
+
+
+o M5 operations and puzzles
+? User will have total of 5 M5Stack devices
+? One M5Stack device will be used to controlling the rover and the ignition
+puzzle
+? One M5Stack will be used for the timer purpose and will send the data to
+the server
+? One M5Stack will be used for the Ultrasonic Sensor connected to it
+• Get the distance
+• Calculate the points according to which rover goes by
+? One M5Stack will be used for the Numpad puzzle
+• Solve the puzzle
+• Gate opens
+• Sends data to server
+? One M5Stack will be used for the PIR Motion Sensor
+• Detect the Rover
+• Instruct user to stop the timer
+
+
+• Do’s and Don'ts
+o User should not drive rover close to the danger area.
+o User should avoid all the obstacles on the track.
+o User should not take any shortcut to complete the mission.
+o User should solve all the puzzle.

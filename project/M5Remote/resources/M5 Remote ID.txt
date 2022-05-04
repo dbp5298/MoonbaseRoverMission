@@ -1,0 +1,2 @@
+ID for the QR Code link: 702121469186146304
+(replacement for undefined in the link for the remote connection)

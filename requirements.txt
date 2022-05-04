@@ -1,0 +1,5 @@
+eve
+pysimplegui
+requests
+pymongo
+unittest

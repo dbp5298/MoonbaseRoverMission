@@ -1,0 +1,58 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceRover Mission Rank Calculator</title>
+</head>
+
+<body>
+
+    <div class="calc-body">
+        <div class="result">
+            <h1>Result</h1>
+            <div class="show">
+                <h2>Rank:<span id="grade"></span></h2>
+            </div>
+        <div>
+        <br>
+        <br>
+        <br>
+        <br>
+                Possible Ranks (High to Low):
+                <br>
+                <br>
+                Master Chief
+                <br>
+                Chief Master Sergeant  
+                <br>
+                Master Sergeant
+                <br>
+                Sergeant
+                <br>
+                Specialist  
+        </div>        
+        </div>
+        <div class="inp">
+            <div class="main">
+				<div>Enter score from the Toxic Waste Meter</div>
+                <input type="number" name="" id="score" placeholder="Score"><br>
+				
+				<div>Enter the seconds elapsed for the mission</div>
+                <input type="number" name="" id="time" placeholder="Time"><br>
+                <button onclick="getResult()">Calculate Rank</button>
+				<br>
+				<br>
+				<br>
+				<div class="button" onclick="window.location.href='http://moonbaserover.atwebpages.com';">HOME</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>

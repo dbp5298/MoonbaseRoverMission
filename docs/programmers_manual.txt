@@ -1,0 +1,90 @@
+This section contains all the information involving anything programming related. This includes
+packages and dependencies with their versions, a link to the GitHub Repo for all the code, and a
+setup of the Raspberry Pi server. It also includes pushing code to M5 Devices and how to get the
+Wi-Fi properly set up to do so. Lastly, it contains a brief overview of versioning for the M5Stacks.
+
+
+• Programming/Environment Requirements
+o List of packages/dependencies
+? pysimplegui
+? Urequests
+? Pymongo
+? Eve
+? MongoDB
+? unit
+
+o UIFlow, Raspberry Pi, and Drivers versions
+? M5 Go for Ultrasonic – 1.9.5
+? M5 Go for Rover – 1.7.5
+? M5 Core 2 (x2) – 1.9.4
+? M5 Grey – 1.7.5
+? UI Flow Desktop – 1.7.5
+? UI Flow browser version – 1.9.5
+? Raspberry Pi – Debian legacy (32 bit)
+
+
+• GitHub Repo
+o Repo link - https://github.com/joeoakes/abist440sp22Team4
+o All the main .m5f files for the project are located under the folder named
+“project”
+o This list below indicates what .m5f file should be ran on what M5 device along
+with its purpose within the project
+? M5Devices and Files
+• M5Rover – M5Go – m5RemoteServo.m5f
+• MainScreen – M5Core2 – MainScreen.m5f
+• Numpad Puzzle – M5Core2 – Numpad.m5f
+• Radioactive Waste Meter - M5Go – motionSensorDetection.m5f
+• Rover Motion Detector – M5Core – RadioactiveWasteUltrasonic.m5f
+
+
+• Setting up PI server
+o Repo link - https://github.com/qqm5052/IST440CC
+o The starteve.py file runs the eve server after all packages are installed from the
+requirements.txt file, and the opscenter.py file would run the python GUI
+application.
+? StartEve.py
+? Settings.py
+? Logger.py
+? Opscenter.py
+o Use python commands to run the files on cmd.
+
+
+• Pushing code to the M5Devices and the modes: USB and Wi-Fi
+o USB:
+• M5Stack is powered on, ensuring you are on USB mode to
+successfully able to connect UI Flow to the Desktop Application
+on Version 1.7.4
+• Making sure you have M5 Stack and Laptop connected with TypeC USB cable.
+• UI Flow setting page
+o COM – This will be populated after your M5 Stack and
+Laptop is connected with Type-C USB.
+o Language – Select the Language you are comfortable
+utilizing.
+o Device – Select the device that you are connecting your
+laptop too. For example: M5 Core 2, M5Go or M5Go Grey.
+o Theme – Select the theme that you would like to apply.
+
+
+o WIFI:
+• M5Stack is powered on, ensuring you are on WIFI mode to
+successfully able to connect UI Flow to the Website Application
+• There will be instructions populated on the M5 Device for you to
+follow when you are attempting to connect M5 Stack to the WIFI.
+• Ensuring your Laptop / Computer is on the same WIFI as the M5
+Stack device when you are attempting to connect onto the WIFI
+Mode.
+• UI Flow setting page
+o COM – This will be populated after your M5 Stack and
+Laptop is connected with WIFI on Web Application.
+o Language – Select the Language you are comfortable
+utilizing.
+o Device – Select the device that you will utilize when you
+start coding. For example: M5 Core 2, M5Go or M5Go
+Grey.
+o Theme – Select the theme that you would like to apply.
+• Versioning Notes
+o M5Rover – M5Go – 1.7.4
+o MainScreen – M5Core2 - 1.9.4
+o Numpad Puzzle – M5Core2 - 1.9.4
+o Radioactive Waste Meter - M5Go - 1.9.5
+o Rover Motion Detector – M5Core – 1.9.4 

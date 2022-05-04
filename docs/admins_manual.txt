@@ -1,0 +1,125 @@
+This section contains the maintenance guide for the M5Stack devices, and all the items it will
+contain on the track. Along with, troubleshooting to ensure that everything will run smoothly as it
+should, making sure we are pushing the code correctly onto the M5stack Devices. Lastly, making
+sure what tools and materials needed for the command center and how are we gone approach. 
+
+Maintenance
+o To ensure proper functionality, it is best to reburn the program onto the M5Stack
+every month. If hiccups occur, make sure to try this methodology first before
+tampering with any sensors/placement.
+
+• Track Setup
+o To set up the track, admin should ensure that each M5Stack is in its proper
+location on the map. The set up of M5Stacks is as follows:
+? Rover M5:
+• Area labeled “START”
+• M5 Go, Laptop, Phone or Tablet
+• 2x 360 Servo
+• 1x Clamp unit
+• Running M5RemoteServo.m5f
+? Toxic Waste M5:
+• Middle of hazard area
+• M5 Go
+• 2x Ultrasonic Sensor
+• Running RadioactiveWasteSensor.m5f
+? Main Screen M5Stack
+• In the area marked “MAIN SCREEN”
+• M5Stack Core 2
+• 1x PIR Sensor
+• Running MainScreen.m5f
+? Numpad Puzzle M5Stack
+• In the area marked “NUMPAD PUZZLE”
+• M5Stack Core 2
+• 1x 180 Servo
+• Running Numpad.m5f
+o After Each M5Stack is running its proper code, the next step is to ensure that the
+M5Stacks are properly charged. To ensure this is being done, it is recommended
+that the M5Stacks be plugged in via USB whenever possible as they do not have
+long battery lives.
+
+• Payload
+o After every run, ensure that the payload is returned to the proper location for the
+next user
+o Also ensure no damage has occurred to the payload and replace if necessary.
+
+• Troubleshooting
+o Battery Issues
+? Battery life is extremely low for these devices
+? As such, ensure that the devices are plugged in via USB whenever
+downtime is possible
+? If all else fails, try pushing the code back onto the M5Stack with its
+respective code
+• See Pushing Code Issues if problems arise here
+
+o Pushing Code Issues
+? Ensure the M5 has both a green Wi-Fi symbol AND a green cloud symbol
+• If not, ensure that the M5Stack is connected to the proper Wi-Fi
+SSID
+• This can be accomplished by heading into Wi-Fi Config on Core 2
+and Setup on M5 Go
+• Follow instructions on M5Stack
+• NOTE: You can also set up the proper SSID and password upon
+burning a version of UI Flow via M5Burner program
+? If both symbols are green but you cannot push the code via the online
+version of UI Flow:
+• Refresh the connection between the M5Stack and UI Flow
+• Ensure that the M5Stack is running a compatible version of UI
+Flow
+o Ex: If you try to push the Rover code to the M5 Go using
+the desktop version of UI Flow, it will not push even if all
+conditions are met for a proper connection. This is due to
+the desktop version of UI Flow not containing the logic to
+execute the remote via QR code.
+
+o Sensor Connectivity Issues
+? Ensure that the sensors are connected to the correct ports as they are
+declared within the code in UI Flow:
+• Ultrasonic Sensors: Port B and Port A
+• 360 Servos: Port B and Port C
+• Clamp Unit: Port A
+• 180 Servo: Port A
+? Ensure that the code is running properly by pushing the code to the unit
+again
+? Ensure that there is a solid connection between the sensor and the
+M5Stack
+? Ensure that all port connections are straight/there
+? If all else fails, try replacing sensor with another of the same type
+
+o Pi Server Connectivity Issues
+? If no connection is being made between the M5Stack and the Eve
+RESTful Service:
+• Ensure that HTTP Post code is being sent to the correct IP
+address/port
+o You can check this by typing ifconfig in a command
+prompt on the raspberry pi
+• Ensure that the EVE RESTful Service is initiated on the PI
+o Run the python3 script titled “CommandCenterLogs.py”
+• Ensure that all versions of packages are the correct ones for this
+specific context
+• Ensure that both the M5Stack and Pi are connected to the same
+network
+o NOTE: 5GHz and 2.4 GHz connections are technically
+different, even if they are coming from the same router.
+They WILL NOT see each other if one is on 5G, and the
+other is not.
+o Internet Connectivity Issues
+? To ensure that M5 device is on the same network as the Phone or Tablet
+when you are using the M5Remote.
+
+• Command Center Operations
+o User will require:
+? 1x Raspberry Pi Unit (running Legacy Debian 32 bit)
+? PyMongo
+? MongoDB
+? EVE RESTful service
+? 1x monitor
+? 1x keyboard
+? 1x mouse
+o User will pull the GitHub repo for the command center onto the Raspberry Pi
+o Run the Python3 code entitled “CommandCenterLogs.py” via Command Line
+o Once this is running, your server is good to go!
+o Now any information sent via the puzzles will be stored here within the
+MongoDB
+o This will be used by the Command Center GUI, which will display what is going
+on and the status of each puzzle 
+ 
